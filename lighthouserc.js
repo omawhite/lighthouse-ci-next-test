@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      url: ["http://localhost:3000/"],
+      url: ["http://0.0.0.0:3000/"],
       startServerCommand: "pnpm start",
     },
     upload: {
