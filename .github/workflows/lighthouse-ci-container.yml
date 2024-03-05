@@ -25,6 +25,10 @@ jobs:
         with:
           fetch-depth: 20 # For Lighthouse to find the appropriate SHA to compare against, we fetch a larger Git history than usual
 
+      - name: Install ps
+        shell: bash
+        run: apt-get -y update; apt-get -y install procps
+
       - name: 🛠 Install pnpm
         uses: pnpm/action-setup@v2
         with:
