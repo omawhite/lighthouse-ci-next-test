@@ -47,4 +47,4 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.13.x
-          lhci autorun --no-sandbox
+          lhci autorun --collect.settings.chromeFlags='--no-sandbox --disable-dev-shm-usage --allow-insecure-localhost'
